@@ -1,0 +1,53 @@
+<div class="navbar navbar-default navbar-fixed-top" ng-controller="MenuCtrl">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="#/" class="navbar-brand"><span class="just">Just</span>LogsIt</a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#/">{{ 'menu.home' | translate}}</a>
+                </li>
+                <li>
+                    <a href="#/solutions">{{ 'menu.solutions' | translate}}</a>
+                </li>
+                <li>
+                    <a href="#/services">{{ 'menu.services' | translate}}</a>
+                </li>
+                <li>
+                    <a href="#/about">{{ 'menu.about' | translate}}</a>
+                </li>
+                <li>
+                    <a href="#/news">{{ 'menu.news' | translate}}</a>
+                </li>
+                <li>
+                    <a href="#/contact">{{ 'menu.contact' | translate}}</a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span ng-if="currentLang === 'en'" class="flag-icon flag-icon-gb"></span>
+                        <span ng-if="currentLang === 'fr'" class="flag-icon flag-icon-fr"></span>
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li ng-if="currentLang != 'en'">
+                            <button ng-click="changeLanguage('en')" class="btn-link"><span class="flag-icon flag-icon-gb"></span><span>English</span></button>
+                        </li>
+                        <li ng-if="currentLang != 'fr'">
+                            <button ng-click="changeLanguage('fr')" class="btn-link"><span class="flag-icon flag-icon-fr"></span><span>Français</span></button>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>

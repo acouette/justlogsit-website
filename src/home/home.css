@@ -1,0 +1,111 @@
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    height: 300px;
+    margin-bottom: 60px;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    padding: 60px 20px 0 20px;
+    z-index: 10;
+    position: static;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+    height: 300px;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.7);
+    filter: blur(5px);
+}
+
+.carousel .item:before {
+    filter: blur(5px);
+}
+
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 300px;
+}
+
+
+.first-carousel-item{
+    background : url("/assets/images/justlogsit_warehouse1.jpg") no-repeat center;
+}
+
+
+.second-carousel-item{
+    background : url("/assets/images/justlogsit_palettes.jpg") no-repeat center;
+}
+
+.third-carousel-item{
+    background : url("/assets/images/justlogsit_warehouse2.jpg") no-repeat center;
+}
+
+
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.marketing h2 {
+    font-weight: normal;
+}
+
+.marketing .col-lg-4 p {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+    margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 2;
+    letter-spacing: -1px;
+}
+
+
+
+
+@media (min-width: 768px) {
+
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+
+    .marketing .col-lg-4 p {
+        min-height: 60px;
+    }
+}
+
+@media (min-width: 992px) {
+    .featurette-heading {
+        margin-top: 50px;
+    }
+}

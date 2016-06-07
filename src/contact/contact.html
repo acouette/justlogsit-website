@@ -1,0 +1,73 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+
+
+            <h2 class="header">Contact us</h2>
+            <hr>
+
+            <div class="well well-sm">
+                <form class="form-horizontal contact-form" method="post" name="contactForm" novalidate ng-if="!contactCtrl.submitted">
+                    <fieldset>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-1 text-right glyphicon glyphicon-user"></span>
+                            <div class="col-md-4">
+                                <input id="fname" name="name" type="text" placeholder="First Name" class="form-control"
+                                       ng-model="contactCtrl.firstname">
+                            </div>
+                            <div class="col-md-4">
+                                <input id="lname" name="name" type="text" placeholder="Last Name" class="form-control"
+                                       ng-model="contactCtrl.lastname">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-1 text-right glyphicon glyphicon-envelope"></span>
+                            <div class="col-md-8">
+                                <input id="email" name="email" type="email" placeholder="Email Address"
+                                       class="form-control" ng-model="contactCtrl.email" required>
+                            </div>
+                            <div ng-messages="contactForm.email.$error" ng-if="contactCtrl.showErrors" class="col-md-2">
+                                <div ng-message="required">This field is required</div>
+                                <div ng-message="email">Invalid email address</div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-1 text-right glyphicon glyphicon-phone"></span>
+                            <div class="col-md-8">
+                                <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control"
+                                       ng-model="contactCtrl.phone">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-1 text-right glyphicon glyphicon-pencil"></span>
+                            <div class="col-md-8">
+                                <textarea class="form-control" id="message" name="message"
+                                          placeholder="Enter your message for us here. We will get back to you within 2 business days."
+                                          rows="7" ng-model="contactCtrl.message" required></textarea>
+                            </div>
+                            <div ng-messages="contactForm.message.$error" ng-if="contactCtrl.showErrors"
+                                 class="col-md-2">
+                                <div ng-message="required">This field is required</div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-12 text-center">
+                                <input type="submit" id="submit" value="Submit" class="btn btn-primary btn-lg"
+                                       ng-click="contactCtrl.submit(contactForm)"/>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+                <div class="lead" ng-if="contactCtrl.submitted">
+                    <p>Your message was sent, you will hear from us shortly !!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

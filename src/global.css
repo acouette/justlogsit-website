@@ -1,0 +1,16 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+    padding-bottom: 40px;
+    color: #dddddd;
+}
+
+#mainPlaceholder {
+    margin-top: 60px;
+}
+
+.just {
+    font-style: italic;
+}
