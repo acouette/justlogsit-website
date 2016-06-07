@@ -72,7 +72,10 @@ translations['en']['home'] = {
     "featurette32Content8": "a trad : Le temps de recherche des produits dans le site",
     "featurette32Content9": "a trad : L’édition de papier",
     "featurette32Content10": "a trad : Les erreurs dues au facteur humain",
-    "featurette32Content11": "a trad : Les livraisons express pour compenser les retards d’exécution"
+    "featurette32Content11": "a trad : Les livraisons express pour compenser les retards d’exécution",
+    "featurette4Content1": "a trad : N'hésitez pas à nous ",
+    "featurette4Content2": "a trad : contacter",
+    "featurette4Content3": "a trad :  pour obtenir de plus amples informations ou demander une démo"
 };
 
 translations['fr']['home'] = {
@@ -145,6 +148,9 @@ translations['fr']['home'] = {
     "featurette32Content8": "Le temps de recherche des produits dans le site",
     "featurette32Content9": "L’édition de papier",
     "featurette32Content10": "Les erreurs dues au facteur humain",
-    "featurette32Content11": "Les livraisons express pour compenser les retards d’exécution"
+    "featurette32Content11": "Les livraisons express pour compenser les retards d’exécution",
+    "featurette4Content1": "N'hésitez pas à nous ",
+    "featurette4Content2": "contacter",
+    "featurette4Content3": " pour obtenir de plus amples informations ou demander une démo."
 
 };
