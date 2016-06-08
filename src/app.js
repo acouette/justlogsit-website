@@ -9,7 +9,11 @@ angular.module('justlogsit', ['ngRoute', 'ngMessages', 'pascalprecht.translate']
         $translateProvider
             .translations('en', translations['en'])
             .translations('fr', translations['fr'])
-            .determinePreferredLanguage();
-    }])
-
-;
+            .registerAvailableLanguageKeys(['en', 'fr'], {
+                'en_*': 'en',
+                'fr_*': 'fr',
+                '*': 'en'
+            })
+            .determinePreferredLanguage()
+            .fallbackLanguage('en');
+    }]);

@@ -3,10 +3,7 @@
  */
 angular.module('justlogsit')
     .controller('MenuCtrl', ['$translate', '$scope', function ($translate, $scope) {
-
-
         $scope.currentLang = $translate.use();
-
         $scope.changeLanguage = function (langKey) {
             $translate.use(langKey);
             $scope.currentLang = $translate.use();
