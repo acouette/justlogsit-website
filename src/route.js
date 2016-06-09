@@ -8,7 +8,9 @@ angular
                 templateUrl: 'src/home/home.html'
             })
             .when('/solutions', {
-                templateUrl: 'src/solutions/solutions.html'
+                templateUrl: 'src/solutions/solutions.html',
+                controller: 'solutionsCtrl',
+                controllerAs: 'solutionsCtrl'
             })
             .when('/services', {
                 templateUrl: 'src/services/services.html'

@@ -1,41 +1,67 @@
 <div class="container">
 
 
-    <div class="row featurette">
-        <h2 class="featurette-heading">{{'solutions.mainHeader' | translate}}</h2>
-        <div class="col-md-5">
-            <img class="featurette-image img-responsive center-block" src="../../assets/images/image1.png"
-                 alt="Generic placeholder image">
-        </div>
-        <div class="col-md-6 col-md-push-1">
-            <li>{{'solutions.mainItem1' | translate}}</li>
-            <li>{{'solutions.mainItem2' | translate}}</li>
-            <li>{{'solutions.mainItem3' | translate}}</li>
-            <li>{{'solutions.mainItem4' | translate}}</li>
-            <li>{{'solutions.mainItem5' | translate}}</li>
-            <li>{{'solutions.mainItem6' | translate}}</li>
-            <li>{{'solutions.mainItem7' | translate}}</li>
-            <li>{{'solutions.mainItem8' | translate}}</li>
-            <li>{{'solutions.mainItem9' | translate}}</li>
-            <li>{{'solutions.mainItem10' | translate}}</li>
-            <li>{{'solutions.mainItem11' | translate}}</li>
-            <li>{{'solutions.mainItem12' | translate}}</li>
-            <li>{{'solutions.mainItem13' | translate}}</li>
-            <li>{{'solutions.mainItem14' | translate}}</li>
-            <li>{{'solutions.mainItem15' | translate}}</li>
-            <li>{{'solutions.mainItem16' | translate}}</li>
-            <li>{{'solutions.mainItem17' | translate}}</li>
-        </div>
+    <h2 class="featurette-heading text-center">{{'solutions.mainHeader' | translate}}</h2>
 
+    <div class="row">
+        <div class="col-md-5ths col-xs-6">
+            <a class="btn btn-danger btn-arrow-right" href="" ng-click="gotoAnchor('reception')">{{'solutions.receptionArrow' | translate}}</a>
+            <ul>
+                <li>{{'solutions.mainItem1' | translate}}</li>
+                <li>{{'solutions.mainItem2' | translate}}</li>
+                <li>{{'solutions.mainItem3' | translate}}</li>
+                <li>{{'solutions.mainItem4' | translate}}</li>
+            </ul>
+        </div>
+        <div class="col-md-5ths col-xs-6">
+            <a class="btn btn-info btn-arrow-right" href="" ng-click="gotoAnchor('stock')">{{'solutions.stockArrow' | translate}}</a>
+            <ul>
+                <li>{{'solutions.mainItem5' | translate}}</li>
+                <li>{{'solutions.mainItem6' | translate}}</li>
+                <li>{{'solutions.mainItem7' | translate}}</li>
+                <li>{{'solutions.mainItem8' | translate}}</li>
+                <li>{{'solutions.mainItem9' | translate}}</li>
+            </ul>
+        </div>
+        <div class="col-md-5ths col-xs-6">
+            <a class="btn btn-primary btn-arrow-right" href="" ng-click="gotoAnchor('pickup')">{{'solutions.pickupArrow' | translate}}</a>
+            <ul>
+                <li>{{'solutions.mainItem10' | translate}}</li>
+                <li>{{'solutions.mainItem11' | translate}}</li>
+                <li>{{'solutions.mainItem12' | translate}}</li>
+                <li>{{'solutions.mainItem13' | translate}}</li>
+                <li>{{'solutions.mainItem14' | translate}}</li>
+                <li>{{'solutions.mainItem15' | translate}}</li>
+            </ul>
+        </div>
+        <div class="col-md-5ths col-xs-6">
+            <a class="btn btn-success btn-arrow-right" href="" ng-click="gotoAnchor('shipping')">{{'solutions.shippingArrow' | translate}}</a>
+            <ul>
+                <li>{{'solutions.mainItem16' | translate}}</li>
+                <li>{{'solutions.mainItem17' | translate}}</li>
+                <li>{{'solutions.mainItem18' | translate}}</li>
+                <li>{{'solutions.mainItem19' | translate}}</li>
+            </ul>
+        </div>
+        <div class="col-md-5ths col-xs-6">
+            <a class="btn btn-warning btn-arrow-right" href="" ng-click="gotoAnchor('management')">{{'solutions.managementArrow' | translate}}</a>
+            <ul>
+                <li>{{'solutions.mainItem20' | translate}}</li>
+                <li>{{'solutions.mainItem21' | translate}}</li>
+                <li>{{'solutions.mainItem22' | translate}}</li>
+                <li>{{'solutions.mainItem23' | translate}}</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
         <div class="col-md-12">
-            <li>{{'solutions.mainItem18' | translate}}</li>
-            <li>{{'solutions.mainItem19' | translate}}</li>
-            <li>{{'solutions.mainItem20' | translate}}</li>
-            <li>{{'solutions.mainItem21' | translate}}</li>
-            <li>{{'solutions.mainItem22' | translate}}</li>
-            <li>{{'solutions.mainItem23' | translate}}</li>
-            <li>{{'solutions.mainItem24' | translate}}</li>
-            <li>{{'solutions.mainItem25' | translate}}</li>
+
+            <ul class="lead">
+                <li>{{'solutions.mainItem24' | translate}}</li>
+                <li>{{'solutions.mainItem25' | translate}}</li>
+            </ul>
+
         </div>
     </div>
 
@@ -43,8 +69,11 @@
     <hr class="featurette-divider">
 
 
-    <div class="row featurette">
-        <h2 class="featurette-heading"><span class="text-muted">{{'solutions.receptionHeader1' | translate}}</span>{{'solutions.receptionHeader2' | translate}}</h2>
+    <div class="row featurette" id="reception">
+
+        <h2 class="featurette-heading solution-heading"><span class="text-muted">{{'solutions.receptionHeader1' | translate}}</span>{{'solutions.receptionHeader2' | translate}}</h2>
+        <a href="" class="btn btn-danger btn-arrow-right pull-right solution-marker">{{'solutions.receptionArrow' | translate}}</a>
+
 
         <div class="col-md-7">
             <ul>
@@ -91,8 +120,10 @@
     <hr class="featurette-divider">
 
 
-    <div class="row featurette">
-        <h2 class="featurette-heading"><span class="text-muted">{{'solutions.stockHeader1' | translate}}</span>{{'solutions.stockHeader2' | translate}}</h2>
+    <div class="row featurette" id="stock">
+
+        <h2 class="featurette-heading solution-heading"><span class="text-muted">{{'solutions.stockHeader1' | translate}}</span>{{'solutions.stockHeader2' | translate}}</h2>
+        <button type="button" class="btn btn-info btn-arrow-right pull-right solution-marker">{{'solutions.stockArrow' | translate}}</button>
 
 
         <div class="col-md-5">
@@ -139,8 +170,10 @@
     <hr class="featurette-divider">
 
 
-    <div class="row featurette">
-        <h2 class="featurette-heading">{{'solutions.pickupHeader1' | translate}}<span class="text-muted">{{'solutions.pickupHeader2' | translate}}</span></h2>
+    <div class="row featurette" id="pickup">
+
+        <h2 class="featurette-heading solution-heading">{{'solutions.pickupHeader1' | translate}}<span class="text-muted">{{'solutions.pickupHeader2' | translate}}</span></h2>
+        <button type="button" class="btn btn-primary btn-arrow-right pull-right solution-marker">{{'solutions.pickupArrow' | translate}}</button>
 
         <div class="col-md-7">
             <ul>
@@ -185,9 +218,12 @@
     <hr class="featurette-divider">
 
 
-    <div class="row featurette">
-        <h2 class="featurette-heading"><span class="text-muted">{{'solutions.shippingsHeader1' | translate}}</span>{{'solutions.shippingsHeader2' | translate}}</h2>
+    <div class="row featurette" id="shipping">
 
+        <h2 class="featurette-heading solution-heading"><span class="text-muted">{{'solutions.shippingsHeader1' | translate}}</span>{{'solutions.shippingsHeader2' | translate}}</h2>
+        <button type="button" class="btn btn-success btn-arrow-right pull-right solution-marker">{{'solutions.shippingArrow' | translate}}</button>
+
+        <h2 class="featurette-heading"></h2>
 
         <div class="col-md-5">
             <img class="featurette-image img-responsive center-block" src="../../assets/images/ship-56569_640.jpg"
@@ -222,8 +258,12 @@
     <hr class="featurette-divider">
 
 
-    <div class="row featurette">
-        <h2 class="featurette-heading">{{'solutions.managementHeader1' | translate}}</h2>
+    <div class="row featurette" id="management">
+
+
+        <h2 class="featurette-heading solution-heading">{{'solutions.managementHeader1' | translate}}</h2>
+        <button type="button" class="btn btn-warning btn-arrow-right pull-right solution-marker" id="managementArrow">{{'solutions.managementArrow' | translate}}</button>
+
 
         <div class="col-md-7">
             <ul>
@@ -257,7 +297,6 @@
     <hr class="featurette-divider">
 
     <div class="row featurette">
-
 
         <div class="col-md-7">
 

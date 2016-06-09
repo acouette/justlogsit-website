@@ -2,8 +2,38 @@
  * Created by acouette on 05/06/16.
  */
 
+angular.module('justlogsit')
+    .run(['$anchorScroll', function($anchorScroll) {
+        $anchorScroll.yOffset = 50;   // always scroll by 50 extra pixels
+    }])
+    .controller('solutionsCtrl', ['$anchorScroll', '$location', '$scope',
+        function ($anchorScroll, $location, $scope) {
+            $scope.gotoAnchor = function(x) {
+                if ($location.hash() !== x) {
+                    // set the $location.hash to `newHash` and
+                    // $anchorScroll will automatically scroll to it
+                    $location.hash(x);
+                } else {
+                    // call $anchorScroll() explicitly,
+                    // since $location.hash hasn't changed
+                    $anchorScroll();
+                }
+            };
+        }
+    ]);
+
+
 translations['en']['solutions'] = {
     "mainHeader" : "Gestion de processus de plates-forme logistique",
+    "receptionArrow" : "Réception",
+    "stockArrow" : "Stock",
+    "pickupArrow" : "Prélèvement",
+    "shippingArrow" : "Expédition",
+    "managementArrow" : "Pilotage",
+
+
+
+
     "mainItem1" : "Portefeuille des réceptions prévues",
     "mainItem2" : "Réception & Contrôle",
     "mainItem3" : "Optimisation de l’adressage des produits à ranger",
