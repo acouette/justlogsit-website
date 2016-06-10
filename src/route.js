@@ -14,13 +14,16 @@ angular
             })
             .when('/services', {
                 templateUrl: 'src/services/services.html'
-            })           
+            })
+            .when('/support', {
+                templateUrl: 'src/support/support.html'
+            })
             .when('/news', {
                 templateUrl: 'src/news/news.html'
             })
             .when('/about', {
-            templateUrl: 'src/about/about.html'
-        })
+                templateUrl: 'src/about/about.html'
+            })
             .when('/contact', {
                 templateUrl: 'src/contact/contact.html',
                 controller: 'ContactCtrl',

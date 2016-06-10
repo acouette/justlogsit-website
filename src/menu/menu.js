@@ -14,17 +14,21 @@ translations['en']['menu'] = {
     "home": "Home",
     "solutions": "Solutions",
     "services": "Services",
+    "support": "Support",
     "news": "News",
     "about": "About Us",
-    "contact": "Contact"
+    "contact": "Contact",
+    "goToApp": "Login"
 };
 
 translations['fr']['menu'] = {
     "home": "Accueil",
     "solutions": "Solutions",
     "services": "Services",
+    "support": "Support",
     "news": "Actualités",
     "about": "La société",
-    "contact": "Contact"
+    "contact": "Contact",
+    "goToApp": "Login"
 };
 

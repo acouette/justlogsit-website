@@ -1,0 +1,32 @@
+.about-title{
+    margin-bottom: 30px;
+}
+
+.member-inner-zone{
+    background-color: #496379;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.member-pic{
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.member-desc{
+    padding: 10px 0;
+}
+
+.jm-pic {
+    height: 220px;
+}
+
+.mo-pic {
+    height: 283px;
+}
+
+
+
+.phil-pic {
+    height: 240px;
+}
