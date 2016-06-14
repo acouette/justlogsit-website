@@ -3,7 +3,7 @@ var translations = {
     'en': {}
 };
 
-angular.module('justlogsit', ['ngRoute', 'ngMessages', 'pascalprecht.translate'])
+angular.module('justlogsit', ['ngRoute', 'ngMessages', 'ngCookies', 'pascalprecht.translate', 'vcRecaptcha'])
 
     .config(['$translateProvider', function ($translateProvider) {
         $translateProvider
@@ -15,5 +15,7 @@ angular.module('justlogsit', ['ngRoute', 'ngMessages', 'pascalprecht.translate']
                 '*': 'en'
             })
             .determinePreferredLanguage()
-            .fallbackLanguage('en');
+            .fallbackLanguage('en')
+            .useCookieStorage();
+        
     }]);
