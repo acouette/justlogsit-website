@@ -14,3 +14,7 @@ body {
 .just {
     font-style: italic;
 }
+
+.rounded-well{
+    border-radius: 5px;
+}

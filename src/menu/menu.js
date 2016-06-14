@@ -16,7 +16,7 @@ translations['en']['menu'] = {
     "services": "Services",
     "support": "Support",
     "news": "News",
-    "about": "About us",
+    "about": "About",
     "contact": "Contact us",
     "goToApp": "Login"
 };

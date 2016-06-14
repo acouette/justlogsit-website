@@ -4,9 +4,28 @@
     <h2 class="header">{{'contact.header' | translate}}</h2>
     <hr>
 
+    <div class="row">
 
-    <div class="well well-sm">
-        <h3 class="header">{{'contact.formHeader' | translate}}</h3>
+        <div class="col-md-3 col-md-offset-2 well well-sm rounded-well text-center">
+            <address>
+                <strong>JustLogsIt</strong><br>
+                Paris, France<br>
+                <a href="mailto:#">jmlb@justogsit.com</a><br>
+                +33 6 29 78 26 77
+            </address>
+
+        </div>
+        <div class="col-md-3 col-md-offset-2 well well-sm rounded-well text-center">
+            <address>
+                <strong>JustLogsIt</strong><br>
+                Aix en provence, France<br>
+                <a href="mailto:#">mco@justlogsit.com</a><br>
+                +33 6 95 41 58 54
+            </address>
+        </div>
+    </div>
+
+    <div class="well well-sm rounded-well">
         <form class="form-horizontal contact-form" method="post" name="contactForm" novalidate ng-if="!contactCtrl.submitted && !contactCtrl.errorWhileSending">
             <fieldset>
 
@@ -48,6 +67,7 @@
                             <option value="option-1">{{'contact.formHeaderReason1' | translate}}</option>
                             <option value="option-2">{{'contact.formHeaderReason2' | translate}}</option>
                             <option value="option-3">{{'contact.formHeaderReason3' | translate}}</option>
+                            <option value="option-4">{{'contact.formHeaderReason4' | translate}}</option>
                         </select>
                     </div>
                 </div>
@@ -96,10 +116,7 @@
 
     <hr>
 
-    <div class="well well-sm">
-        <h3 class="header">{{'contact.alternativeHeader' | translate}}</h3>
 
-    </div>
 
 
 </div>

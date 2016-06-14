@@ -21,18 +21,7 @@ angular.module('justlogsit')
                     'Tél : ' + vm.phone + '\n' +
                     'Sujet : ' + vm.subject + '\n' +
                     'Message : ' + vm.message + '\n';
-                var recipient;
-                switch (subject) {
-                    case 'option-1':
-                        recipient = 'a.j.couette@gmail.com';
-                        break;
-                    case 'option-2':
-                        recipient = 'a.j.couette@gmail.com';
-                        break;
-                    case 'option-3':
-                        recipient = 'a.j.couette@gmail.com';
-                        break;
-                }
+                var recipient = 'a.j.couette@gmail.com';
 
                 $http({
                     method: 'POST',
@@ -47,8 +36,6 @@ angular.module('justlogsit')
                     console.log(response);
                     vm.errorWhileSending = true;
                 });
-
-
             }
         };
     }]);
@@ -56,23 +43,36 @@ angular.module('justlogsit')
 
 translations['en']['contact'] = {
     "header": "Nous conctacter",
-    "formHeader": "Via le formulaire",
     "formHeaderMandatoryField": "Champ obligatoire",
     "formHeaderName": "Nom",
     "formHeaderEmail": "Adresse email",
     "formHeaderInvalidEmail": "Adresse email invalide",
     "formHeaderPhone": "Téléphone",
-    "formHeaderReason1": "Option 1",
-    "formHeaderReason2": "Demande de démo",
-    "formHeaderReason3": "Support technique",
+    "formHeaderReason1": "Demande d’informations",
+    "formHeaderReason2": "Demander une démo",
+    "formHeaderReason3": "Demande de support",
+    "formHeaderReason4": "Signaler une anomalie",
     "formHeaderMessage": "Entrez votre message ici",
     "formHeaderMandatoryCaptcha": "La saisie du captcha est obligatoire",
     "formHeaderSend": "Envoyer",
     "formHeaderSent": "Votre demande a bien été prise en compte, nous revenons vers vous dès que possible.",
     "formHeaderErrorWhileSending": "Une erreur est survenue lors de l'envoi de votre message, merci de nous contacter directement par email ou téléphone",
-    "alternativeHeader": "Par email ou téléphone"
 };
 
 translations['fr']['contact'] = {
     "header": "Nous conctacter",
+    "formHeaderMandatoryField": "Champ obligatoire",
+    "formHeaderName": "Nom",
+    "formHeaderEmail": "Adresse email",
+    "formHeaderInvalidEmail": "Adresse email invalide",
+    "formHeaderPhone": "Téléphone",
+    "formHeaderReason1": "Demande d’informations",
+    "formHeaderReason2": "Demander une démo",
+    "formHeaderReason3": "Demande de support",
+    "formHeaderReason4": "Signaler une anomalie",
+    "formHeaderMessage": "Entrez votre message ici",
+    "formHeaderMandatoryCaptcha": "La saisie du captcha est obligatoire",
+    "formHeaderSend": "Envoyer",
+    "formHeaderSent": "Votre demande a bien été prise en compte, nous revenons vers vous dès que possible.",
+    "formHeaderErrorWhileSending": "Une erreur est survenue lors de l'envoi de votre message, merci de nous contacter directement par email ou téléphone",
 };
