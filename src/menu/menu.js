@@ -11,7 +11,6 @@ angular.module('justlogsit')
     }]);
 
 translations['en']['menu'] = {
-    "home": "Home",
     "solutions": "Solutions",
     "services": "Services",
     "support": "Support",
@@ -22,7 +21,6 @@ translations['en']['menu'] = {
 };
 
 translations['fr']['menu'] = {
-    "home": "Accueil",
     "solutions": "Solutions",
     "services": "Services",
     "support": "Support",

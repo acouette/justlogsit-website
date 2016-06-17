@@ -6,7 +6,7 @@ angular.module('justlogsit')
     .run(['$anchorScroll', function($anchorScroll) {
         $anchorScroll.yOffset = 50;   // always scroll by 50 extra pixels
     }])
-    .controller('solutionsCtrl', ['$anchorScroll', '$location', '$scope',
+    .controller('SolutionsCtrl', ['$anchorScroll', '$location', '$scope',
         function ($anchorScroll, $location, $scope) {
             $scope.gotoAnchor = function(x) {
                 if ($location.hash() !== x) {
@@ -24,7 +24,7 @@ angular.module('justlogsit')
 
 
 translations['en']['solutions'] = {
-    "mainHeader" : "Gestion de processus de plates-forme logistique",
+    "mainHeader" : "Gestion de processus des plates-formes logistiques",
     "receptionArrow" : "Réception",
     "stockArrow" : "Stock",
     "pickupArrow" : "Prélèvement",
@@ -145,7 +145,7 @@ translations['en']['solutions'] = {
 
 translations['fr']['solutions'] = {
 
-    "mainHeader" : "Gestion de processus de plates-forme logistique",
+    "mainHeader" : "Gestion de processus des plates-formes logistiques",
     "mainItem1" : "Portefeuille des réceptions prévues",
     "mainItem2" : "Réception & Contrôle",
     "mainItem3" : "Optimisation de l’adressage des produits à ranger",

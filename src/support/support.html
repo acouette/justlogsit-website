@@ -1,22 +1,77 @@
 <div class="container">
 
+    <h3 class="featurette-heading">{{ 'support.mainHeader' | translate }}</h3>
+    <p><em>{{ 'support.mainDescription1' | translate }}</em></p>
+    <p><em>{{ 'support.mainDescription2' | translate }} <a href="#/contact">{{ 'support.contactUs' | translate }}</a> </em></p>
+
+    <hr>
+    <h4>{{ 'support.feature' | translate }}</h4>
     <ul>
-        <li>Utilisateur
+        <li>{{ 'support.featureInput' | translate }}
             <ul>
-                <li>Doc flux de réception de maureen</li>
-                <li>Video de mo</li>
-                <li>Doc flux de distribution de maureen</li>
-                <li>Video de mo</li>
+                <li>
+                    <span class="glyphicon glyphicon-file" aria-hidden="true"></span>
+                    {{ 'support.featureInputDiagram' | translate }} -
+                    <a href="../../assets/documents/toto.pdf" class="text-capitalize">{{ 'support.show' | translate }}</a> -
+                    <a href="../../assets/documents/toto.pdf" class="text-capitalize" download>{{ 'support.download' | translate }}</a>
+
+                </li>
+                <li>{{ 'support.featureInputExpected' | translate }} <em>({{ 'support.workInProgress' | translate }})</em></li>
+                <li>{{ 'support.featureInputInputAndValidation' | translate }} <em>({{ 'support.workInProgress' | translate }})</em></li>
+                <li>{{ 'support.featureInputRF' | translate }} <em>({{ 'support.workInProgress' | translate }})</em></li>
             </ul>
         </li>
-        <li>Formation</li>
-        <li>Configuration
+        <li>{{ 'support.featureOutput' | translate }}
             <ul>
-                <li>Video de MO</li>
+                <li>{{ 'support.featureOutputOL' | translate }} <em>({{ 'support.workInProgress' | translate }})</em></li>
+                <li>{{ 'support.featureOutputDiagram' | translate }} <em>({{ 'support.workInProgress' | translate }})</em></li>
+                <li>{{ 'support.featureOutputPrepare' | translate }} <em>({{ 'support.workInProgress' | translate }})</em></li>
+                <li>{{ 'support.featureOutputPickup' | translate }} <em>({{ 'support.workInProgress' | translate }})</em></li>
+                <li>{{ 'support.featureOutputDelivery' | translate }} <em>({{ 'support.workInProgress' | translate }})</em></li>
             </ul>
         </li>
-        <li>Signaler une anomalie</li>
-        <li>Poser une question</li>
+        <li>{{ 'support.featureStock' | translate }}
+            <ul>
+                <li>{{ 'support.featureStockManagement' | translate }} <em>({{ 'support.workInProgress' | translate }})</em></li>
+                <li>{{ 'support.featureStockState' | translate }} <em>({{ 'support.workInProgress' | translate }})</em></li>
+                <li>{{ 'support.featureStockTransfer' | translate }} <em>({{ 'support.workInProgress' | translate }})</em></li>
+                <li>{{ 'support.featureStockInventory' | translate }} <em>({{ 'support.workInProgress' | translate }})</em></li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <hr>
+    <h4>{{ 'support.configuration' | translate }}</h4>
+    <ul>
+        <li>{{ 'support.configurationParams' | translate }}
+            <ul>
+                <li>{{ 'support.configurationParamsDoc' | translate }} <em>({{ 'support.workInProgress' | translate }})</em></li>
+                <li>
+                    <span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span>
+                    {{ 'support.configurationParamsAssistant' | translate }} -
+                    <a ng-href="#/viewer/file/{{ 'support.configurationParamsDocFile' | translate }}" class="text-capitalize">{{ 'support.watch' | translate }}</a> -
+                    <a ng-href="/assets/videos/{{ 'support.configurationParamsDocFile' | translate }}" class="text-capitalize" download>{{ 'support.download' | translate }}</a>
+                </li>
+            </ul>
+        </li>
+        <li>{{ 'support.configurationMasters' | translate }}
+            <ul>
+                <li>{{ 'support.configurationMastersDoc' | translate }} <em>({{ 'support.workInProgress' | translate }})</em></li>
+                <li>{{ 'support.configurationMastersArticle' | translate }} <em>({{ 'support.workInProgress' | translate }})</em></li>
+                <li>{{ 'support.configurationMastersLocation' | translate }} <em>({{ 'support.workInProgress' | translate }})</em></li>
+                <li>{{ 'support.configurationMastersAffectation' | translate }} <em>({{ 'support.workInProgress' | translate }})</em></li>
+            </ul>
+        </li>
+
+    </ul>
+
+    <hr>
+    <h4>{{ 'support.interfaces' | translate }}</h4>
+    <ul>
+        <li>{{ 'support.interfacesDoc' | translate }} <em>({{ 'support.workInProgress' | translate }})</em></li>
+        <li>{{ 'support.interfacesTrade' | translate }} <em>({{ 'support.workInProgress' | translate }})</em></li>
+        <li>{{ 'support.interfacesDemo' | translate }} <em>({{ 'support.workInProgress' | translate }})</em></li>
     </ul>
 
 </div>
