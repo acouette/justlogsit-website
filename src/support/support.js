@@ -17,12 +17,14 @@ translations['en']['support'] = {
     "feature": "Fonctions du logiciel",
     "featureInput": "Flux de Réception, entrée dans le site",
     "featureInputDiagram": "Schéma des Entrées",
+    "featureInputDiagramFile": "Schéma des entrées - fr.pdf",
     "featureInputExpected": "Réception sur entrée attendue",
     "featureInputInputAndValidation": "Saisie des entrées et validation des mouvements",
     "featureInputRF": "Fonctions RF pour les entrées",
     "featureOutput": "Flux de Distribution, sortie du site",
     "featureOutputOL": "Gestion des OL",
     "featureOutputDiagram": "Schéma des Sorties",
+    "featureOutputDiagramFile": "Schéma des sorties - fr.pdf",
     "featureOutputPrepare": "Sélection et lancement de la préparation",
     "featureOutputPickup": "Prélèvements",
     "featureOutputDelivery": "Gestion des tournées, chargement et expédition",
@@ -45,15 +47,13 @@ translations['en']['support'] = {
     "interfacesDoc": "Interfaces",
     "interfacesTrade": "Techniques d’échange",
     "interfacesDemo": "Démonstration Interface",
-    "watch": "watch",
-    "download": "download",
-    "show": "show",
     "workInProgress": "bientôt disponible"
 
 };
 
 
 translations['fr']['support'] = {
+
     "mainHeader": "Guides de démarrage",
     "mainDescription1": "Vous trouverez ici les guides vous permettant de prendre en main JustLogsIt",
     "mainDescription2": "Pour une demande d'information complémentaire ou signaler une anomalie, merci de",
@@ -61,12 +61,14 @@ translations['fr']['support'] = {
     "feature": "Fonctions du logiciel",
     "featureInput": "Flux de Réception, entrée dans le site",
     "featureInputDiagram": "Schéma des Entrées",
+    "featureInputDiagramFile": "Schéma des entrées - fr.pdf",
     "featureInputExpected": "Réception sur entrée attendue",
     "featureInputInputAndValidation": "Saisie des entrées et validation des mouvements",
     "featureInputRF": "Fonctions RF pour les entrées",
     "featureOutput": "Flux de Distribution, sortie du site",
     "featureOutputOL": "Gestion des OL",
     "featureOutputDiagram": "Schéma des Sorties",
+    "featureOutputDiagramFile": "Schéma des sorties - fr.pdf",
     "featureOutputPrepare": "Sélection et lancement de la préparation",
     "featureOutputPickup": "Prélèvements",
     "featureOutputDelivery": "Gestion des tournées, chargement et expédition",
@@ -89,8 +91,5 @@ translations['fr']['support'] = {
     "interfacesDoc": "Interfaces",
     "interfacesTrade": "Techniques d’échange",
     "interfacesDemo": "Démonstration Interface",
-    "watch": "watch",
-    "download": "download",
-    "show": "show",
     "workInProgress": "bientôt disponible"
 };

@@ -7,15 +7,16 @@ angular.module('justlogsit', ['ngRoute', 'ngMessages', 'ngCookies', 'pascalprech
 
     .config(['$translateProvider', function ($translateProvider) {
         $translateProvider
-            .translations('en', translations['en'])
+            // .translations('en', translations['en'])
             .translations('fr', translations['fr'])
-            .registerAvailableLanguageKeys(['en', 'fr'], {
-                'en_*': 'en',
-                'fr_*': 'fr',
-                '*': 'en'
-            })
-            .determinePreferredLanguage()
-            .fallbackLanguage('en')
-            .useCookieStorage();
+            .use('fr');
+            // .registerAvailableLanguageKeys(['en', 'fr'], {
+            //     'en_*': 'en',
+            //     'fr_*': 'fr',
+            //     '*': 'en'
+            // })
+            // .determinePreferredLanguage()
+            // .fallbackLanguage('en')
+            // .useCookieStorage();
         
     }]);

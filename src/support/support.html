@@ -12,8 +12,8 @@
                 <li>
                     <span class="glyphicon glyphicon-file" aria-hidden="true"></span>
                     {{ 'support.featureInputDiagram' | translate }} -
-                    <a href="../../assets/documents/toto.pdf" class="text-capitalize">{{ 'support.show' | translate }}</a> -
-                    <a href="../../assets/documents/toto.pdf" class="text-capitalize" download>{{ 'support.download' | translate }}</a>
+                    <a ng-href="../../assets/documents/{{ 'support.featureInputDiagramFile' | translate }}" class="text-capitalize" data-toggle="tooltip" title="Visualize"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+                    <a ng-href="../../assets/documents/{{ 'support.featureInputDiagramFile' | translate }}" class="text-capitalize" data-toggle="tooltip" title="Download" download><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></a>
 
                 </li>
                 <li>{{ 'support.featureInputExpected' | translate }} <em>({{ 'support.workInProgress' | translate }})</em></li>
@@ -24,7 +24,13 @@
         <li>{{ 'support.featureOutput' | translate }}
             <ul>
                 <li>{{ 'support.featureOutputOL' | translate }} <em>({{ 'support.workInProgress' | translate }})</em></li>
-                <li>{{ 'support.featureOutputDiagram' | translate }} <em>({{ 'support.workInProgress' | translate }})</em></li>
+                <li>
+                    <span class="glyphicon glyphicon-file" aria-hidden="true"></span>
+                    {{ 'support.featureOutputDiagram' | translate }} -
+                    <a ng-href="../../assets/documents/{{ 'support.featureOutputDiagramFile' | translate }}" class="text-capitalize" data-toggle="tooltip" title="Visualize"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+                    <a ng-href="../../assets/documents/{{ 'support.featureOutputDiagramFile' | translate }}" class="text-capitalize" data-toggle="tooltip" title="Download" download><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></a>
+
+                </li>
                 <li>{{ 'support.featureOutputPrepare' | translate }} <em>({{ 'support.workInProgress' | translate }})</em></li>
                 <li>{{ 'support.featureOutputPickup' | translate }} <em>({{ 'support.workInProgress' | translate }})</em></li>
                 <li>{{ 'support.featureOutputDelivery' | translate }} <em>({{ 'support.workInProgress' | translate }})</em></li>
@@ -50,8 +56,8 @@
                 <li>
                     <span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span>
                     {{ 'support.configurationParamsAssistant' | translate }} -
-                    <a ng-href="#/viewer/file/{{ 'support.configurationParamsDocFile' | translate }}" class="text-capitalize">{{ 'support.watch' | translate }}</a> -
-                    <a ng-href="/assets/videos/{{ 'support.configurationParamsDocFile' | translate }}" class="text-capitalize" download>{{ 'support.download' | translate }}</a>
+                    <a ng-href="#/viewer/file/{{ 'support.configurationParamsDocFile' | translate }}" data-toggle="tooltip" title="Download"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></a>
+                    <a ng-href="/assets/videos/{{ 'support.configurationParamsDocFile' | translate }}" data-toggle="tooltip" title="Play" download><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></a>
                 </li>
             </ul>
         </li>

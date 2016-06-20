@@ -146,6 +146,11 @@ translations['en']['solutions'] = {
 translations['fr']['solutions'] = {
 
     "mainHeader" : "Gestion de processus des plates-formes logistiques",
+    "receptionArrow" : "Réception",
+    "stockArrow" : "Stock",
+    "pickupArrow" : "Prélèvement",
+    "shippingArrow" : "Expédition",
+    "managementArrow" : "Pilotage",
     "mainItem1" : "Portefeuille des réceptions prévues",
     "mainItem2" : "Réception & Contrôle",
     "mainItem3" : "Optimisation de l’adressage des produits à ranger",

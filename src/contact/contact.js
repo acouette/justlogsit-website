@@ -43,6 +43,7 @@ angular.module('justlogsit')
 
 translations['en']['contact'] = {
     "header": "Nous conctacter",
+    "formHeader": "Formulaire de contact",
     "formHeaderMandatoryField": "Champ obligatoire",
     "formHeaderName": "Nom",
     "formHeaderEmail": "Adresse email",
@@ -61,6 +62,7 @@ translations['en']['contact'] = {
 
 translations['fr']['contact'] = {
     "header": "Nous conctacter",
+    "formHeader": "Formulaire de contact",
     "formHeaderMandatoryField": "Champ obligatoire",
     "formHeaderName": "Nom",
     "formHeaderEmail": "Adresse email",
